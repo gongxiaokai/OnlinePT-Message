@@ -1,0 +1,119 @@
+{
+  "name": "OnlinePT-BaseCore",
+  "version": "0.0.1",
+  "summary": "基础组件",
+  "description": "基础组件",
+  "homepage": "https://github.com/139391025@qq.com/OnlinePT-BaseCore",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "139391025@qq.com": "139391025@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/139391025@qq.com/OnlinePT-BaseCore.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "OnlinePT-BaseCore/Classes/**/*",
+  "resource_bundles": {
+    "OnlinePT-BaseCore": [
+      "OnlinePT-BaseCore/Assets/*{.storyboard,.xcassets}",
+      "OnlinePT-BaseCore/Assets/**/*"
+    ]
+  },
+  "static_framework": true,
+  "frameworks": "UIKit",
+  "dependencies": {
+    "RxSwift": [
+      "~> 4.5.0"
+    ],
+    "RxGesture": [
+      "~> 2.2.0"
+    ],
+    "RxDataSources": [
+      "~> 3.1.0"
+    ],
+    "Moya/RxSwift": [
+      "~> 13.0"
+    ],
+    "Alamofire": [
+      "~> 4.8.2"
+    ],
+    "IQKeyboardManagerSwift": [
+      "~> 6.2.1"
+    ],
+    "ObjectMapper": [
+      "~> 3.4.2"
+    ],
+    "EachNavigationBar": [
+      "~> 1.9.2"
+    ],
+    "ESTabBarController-swift": [
+      "~> 2.7"
+    ],
+    "Kingfisher": [
+      "~> 5.4.0"
+    ],
+    "MBProgressHUD": [
+      "~> 1.1.0"
+    ],
+    "MJRefresh": [
+      "~> 3.1.16"
+    ],
+    "SnapKit": [
+      "~> 5.0.0"
+    ],
+    "TZImagePickerController": [
+      "~> 3.2.0"
+    ],
+    "SKPhotoBrowser": [
+      "~> 6.1.0"
+    ],
+    "AMapLocation-NO-IDFA": [
+      "~> 2.6.2"
+    ],
+    "UITextView+Placeholder": [
+
+    ],
+    "URLNavigator": [
+      "~> 2.2.0"
+    ],
+    "SwiftyUserDefaults": [
+      "~> 4.0.0"
+    ],
+    "PhoneNumberKit": [
+      "~> 2.6"
+    ],
+    "XCGLogger": [
+      "~> 7.0.0"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "WXManager",
+      "source_files": "OnlinePT-BaseCore/WXManager/**/*",
+      "vendored_libraries": "libWeChatSDK.a",
+      "dependencies": {
+        "WechatOpenSDK": [
+          "~> 1.8.4"
+        ]
+      }
+    },
+    {
+      "name": "WeiboManager",
+      "source_files": "OnlinePT-BaseCore/WeiboManager/**/*",
+      "vendored_libraries": "libWeiboSDK.a",
+      "dependencies": {
+        "Weibo_SDK": [
+          "~> 3.2.3"
+        ]
+      }
+    }
+  ],
+  "swift_version": "5.0"
+}

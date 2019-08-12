@@ -2,10 +2,7 @@ use_frameworks!
 
 target 'OnlinePT-Message_Example' do
   pod 'OnlinePT-Message', :path => '../'
+  pod 'OnlinePT-BaseCore', :path => '../../OnlinePT-BaseCore'
+  pod 'OnlinePT-Config', :path => '../../OnlinePT-Config'
 
-  target 'OnlinePT-Message_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

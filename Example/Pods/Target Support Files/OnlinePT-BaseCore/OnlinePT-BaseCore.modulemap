@@ -1,0 +1,6 @@
+framework module OnlinePT_BaseCore {
+  umbrella header "OnlinePT-BaseCore-umbrella.h"
+
+  export *
+  module * { export * }
+}

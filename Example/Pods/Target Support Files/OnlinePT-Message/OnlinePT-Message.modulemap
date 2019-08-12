@@ -1,0 +1,6 @@
+framework module OnlinePT_Message {
+  umbrella header "OnlinePT-Message-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OnlinePT-Message'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of OnlinePT-Message.'
+  s.version          = '0.0.1'
+  s.summary          = '组件化 - 消息模块'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,15 +28,15 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/gongxiaokai/OnlinePT-Message.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'OnlinePT-Message/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'OnlinePT-Message' => ['OnlinePT-Message/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.resource_bundles = {
+      'OnlinePT-Message' => ['OnlinePT-Message/Assets/**/*']
+  }
+  s.static_framework = true
+  s.frameworks = 'UIKit'
+  s.dependency 'OnlinePT-BaseCore'  , '~> 0.0.1'
+  s.dependency 'OnlinePT-Config'    , '~> 0.0.1'
 end

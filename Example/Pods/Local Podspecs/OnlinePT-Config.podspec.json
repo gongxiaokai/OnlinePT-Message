@@ -1,0 +1,34 @@
+{
+  "name": "OnlinePT-Config",
+  "version": "0.0.1",
+  "summary": "A short description of OnlinePT-Config.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "http://47.244.189.240/ios/onlinept-ios/onlinept-config",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "139391025@qq.com": "139391025@qq.com"
+  },
+  "source": {
+    "git": "http://47.244.189.240/ios/onlinept-ios/onlinept-config.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "OnlinePT-Config/Classes/**/*",
+  "resource_bundles": {
+    "OnlinePT-Config": [
+      "OnlinePT-Config/Assets/*{.storyboard,.xcassets}",
+      "OnlinePT-Config/Assets/**/*"
+    ]
+  },
+  "dependencies": {
+    "OnlinePT-BaseCore": [
+      "~> 0.0.1"
+    ]
+  },
+  "static_framework": true
+}

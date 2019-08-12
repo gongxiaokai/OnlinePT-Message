@@ -1,0 +1,6 @@
+framework module Pods_OnlinePT_Message_Example {
+  umbrella header "Pods-OnlinePT-Message_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
