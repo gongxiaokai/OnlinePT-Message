@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'OnlinePT-Message_Example' do
+  pod 'OnlinePT-Message', :path => '../'
+
+  target 'OnlinePT-Message_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
