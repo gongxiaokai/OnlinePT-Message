@@ -1,0 +1,10 @@
+/*
+ Localizable.strings
+ Pods
+ 
+ Created by gongwenkai on 2019/7/16.
+ 
+ */
+
+
+LOGIN_TEST_STR = "this is english in login pod";
