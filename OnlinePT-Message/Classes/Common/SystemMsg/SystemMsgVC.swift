@@ -27,7 +27,6 @@ class SystemMsgVC : NiblessViewController {
     
     internal override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        viewModel.fetchData()
     }
 }
 
@@ -38,7 +37,7 @@ extension SystemMsgVC {
     }
     
     private func bindViewModel() {
-        
+        viewModel.fetchData()
     }
     
 }

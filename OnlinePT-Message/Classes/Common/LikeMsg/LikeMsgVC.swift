@@ -27,7 +27,6 @@ class LikeMsgVC : NiblessViewController {
     
     internal override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        viewModel.fetchData()
     }
 }
 
@@ -52,6 +51,7 @@ extension LikeMsgVC {
     }
     
     private func bindViewModel() {
+        viewModel.fetchData()
         viewModel.tapReplySubject
             .subscribe(onNext: { (id) in
                 _ = Navigator.that?.push("reply".formatScheme())
